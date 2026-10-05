@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Task 00 Result Evidence</title>
+<style>
+  body { margin: 0; padding: 48px; color: #e6edf3; background: #0d1117; font: 18px/1.5 -apple-system, BlinkMacSystemFont, sans-serif; }
+  h1 { margin: 0 0 8px; color: #58a6ff; } p { color: #b1bac4; }
+  pre { padding: 28px; border: 1px solid #30363d; border-radius: 12px; background: #161b22; font: 16px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .ok { color: #3fb950; } .key { color: #79c0ff; }
+</style>
+<h1>ClaimTriageLab · Task 00 result</h1>
+<p>Local verification run · 2026-10-05</p>
+<pre><span class="key">$ make verify</span>
+ruff check .                 <span class="ok">All checks passed!</span>
+ruff format --check .        <span class="ok">5 files already formatted</span>
+pytest                       <span class="ok">2 passed in 0.01s</span>
+evaluation readiness         <span class="ok">status: ready</span>
+
+health:
+{
+  "data_classification": "synthetic_only",
+  "mode": "local_research_demo",
+  "project": "ClaimTriageLab",
+  "python_version": "3.12.9",
+  "service_cost_usd": 0,
+  "status": "ok",
+  "version": "0.1.0"
+}
+
+<span class="ok">TASK 00 ACCEPTANCE GATE: PASS</span></pre>
+</html>
+

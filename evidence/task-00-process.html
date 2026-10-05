@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Task 00 Process Evidence</title>
+<style>
+  body { margin: 0; padding: 48px; color: #e6edf3; background: #0d1117; font: 18px/1.5 -apple-system, BlinkMacSystemFont, sans-serif; }
+  h1 { margin: 0 0 8px; color: #58a6ff; } p { color: #b1bac4; }
+  pre { padding: 28px; overflow: hidden; border: 1px solid #30363d; border-radius: 12px; background: #161b22; font: 16px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .ok { color: #3fb950; } .label { color: #d2a8ff; }
+</style>
+<h1>ClaimTriageLab · Task 00 process evidence</h1>
+<p>Repository scaffold and dependency lock · 2026-10-05</p>
+<pre><span class="label">$ tree (selected files)</span>
+ClaimTriageLab/
+├── README.md                 ├── pyproject.toml
+├── Makefile                  ├── uv.lock
+├── .env.example              ├── .gitignore
+├── src/claimtriagelab/
+│   ├── cli.py                └── health.py
+├── tests/test_health.py
+├── evals/run_evaluation.py
+├── docs/
+│   ├── implementation-plan.md
+│   ├── architecture.md       ├── DATA_PROVENANCE.md
+│   ├── MODEL_CARD.md         ├── THREAT_MODEL.md
+│   ├── evaluation-plan.md    └── adr/ADR-001-local-first-zero-cost.md
+├── data/.gitkeep             ├── artifacts/.gitkeep
+└── evidence/
+
+<span class="label">$ uv lock &amp;&amp; uv sync --dev</span>
+Resolved 8 packages
+Installed claimtriagelab, pytest 8.4.2, ruff 0.13.3
+
+<span class="label">$ git status --branch --short</span>
+## No commits yet on main
+<span class="ok">Repository initialized successfully</span></pre>
+</html>
+

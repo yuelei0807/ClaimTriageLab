@@ -1,0 +1,23 @@
+CLAIMTRIAGELAB - TASK 00 RESULT EVIDENCE                     2026-10-05
+========================================================================
+
+$ make verify
+
+ruff check .                  All checks passed!
+ruff format --check .         5 files already formatted
+pytest                        2 passed in 0.01s
+evaluation readiness          status: ready
+
+health:
+{
+  "data_classification": "synthetic_only",
+  "mode": "local_research_demo",
+  "project": "ClaimTriageLab",
+  "python_version": "3.12.9",
+  "service_cost_usd": 0,
+  "status": "ok",
+  "version": "0.1.0"
+}
+
+TASK 00 ACCEPTANCE GATE: PASS
+

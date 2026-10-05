@@ -1,0 +1,31 @@
+CLAIMTRIAGELAB - TASK 00 PROCESS EVIDENCE                    2026-10-05
+========================================================================
+
+Repository scaffold and dependency lock
+
+$ project files (selected)
+ClaimTriageLab/
+|-- README.md                  |-- pyproject.toml
+|-- Makefile                   |-- uv.lock
+|-- .env.example               |-- .gitignore
+|-- src/claimtriagelab/
+|   |-- cli.py                 |-- health.py
+|-- tests/test_health.py
+|-- evals/run_evaluation.py
+|-- docs/
+|   |-- implementation-plan.md |-- architecture.md
+|   |-- DATA_PROVENANCE.md     |-- MODEL_CARD.md
+|   |-- THREAT_MODEL.md        |-- evaluation-plan.md
+|   `-- adr/ADR-001-local-first-zero-cost.md
+|-- data/.gitkeep              |-- artifacts/.gitkeep
+`-- evidence/
+
+$ uv lock && uv sync --dev
+Resolved 8 packages
+Installed claimtriagelab, pytest 8.4.2, ruff 0.13.3
+
+$ git status --branch --short
+## No commits yet on main
+
+RESULT: Repository initialized successfully.
+
