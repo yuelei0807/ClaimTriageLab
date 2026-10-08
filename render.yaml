@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: claimtriagelab
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.11
+      - key: CLAIMTRIAGE_LLM_PROVIDER
+        value: groq
+      - key: CLAIMTRIAGE_LLM_MODEL
+        value: openai/gpt-oss-20b
+      - key: QDRANT_COLLECTION
+        value: claim-evidence
+      - key: CLAIMTRIAGE_REVIEWER_ID
+        value: showcase_reviewer
+      - key: GROQ_API_KEY
+        sync: false
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      - key: LANGFUSE_HOST
+        value: https://us.cloud.langfuse.com
+      - key: LANGFUSE_PUBLIC_KEY
+        sync: false
+      - key: LANGFUSE_SECRET_KEY
+        sync: false
+      - key: CLAIMTRIAGE_REVIEWER_PASSWORD
+        sync: false
+      - key: CLAIMTRIAGE_CSRF_SECRET
+        generateValue: true
+      - key: CLAIMTRIAGE_WEBHOOK_API_KEY
+        generateValue: true

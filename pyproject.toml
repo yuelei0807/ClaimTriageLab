@@ -10,14 +10,32 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "Apache-2.0" }
 authors = [{ name = "ClaimTriageLab contributors" }]
-dependencies = []
+dependencies = [
+  "faker>=37,<38",
+  "fastapi>=0.118,<1",
+  "httpx>=0.28,<1",
+  "joblib>=1.5,<2",
+  "langgraph>=1.0,<2",
+  "langgraph-checkpoint-sqlite>=3,<4",
+  "numpy>=2.3,<3",
+  "opentelemetry-sdk>=1.38,<2",
+  "pandas>=2.3,<3",
+  "pydantic>=2.11,<3",
+  "pypdf>=6.5,<7",
+  "python-multipart>=0.0.20,<1",
+  "reportlab>=4.4,<5",
+  "scikit-learn>=1.7,<2",
+  "tqdm>=4.67,<5",
+  "uvicorn>=0.37,<1",
+]
 
 [project.scripts]
 claimtriagelab = "claimtriagelab.cli:main"
 
 [dependency-groups]
 dev = [
-  "pytest>=8.4,<9",
+  "pip-audit>=2.9,<3",
+  "pytest>=9.0.3,<10",
   "ruff>=0.13,<0.14",
 ]
 

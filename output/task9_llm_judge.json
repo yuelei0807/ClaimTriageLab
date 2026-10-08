@@ -1,0 +1,125 @@
+{
+  "evaluation": "error_recovery_llm_judge_v1",
+  "generated_at": "2026-10-08T10:51:28.371803+00:00",
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "trace_count": 10,
+  "mean_score": 4.2,
+  "score_distribution": {
+    "1": 1,
+    "4": 4,
+    "5": 5
+  },
+  "grades": [
+    {
+      "trace_id": "trace_ceefed573a5045369b961905c2c748c5",
+      "score": 5,
+      "error_detected": false,
+      "recovered": false,
+      "rationale": "All steps completed successfully with no errors detected; recovery run was a successful validation. The trace demonstrates robust safeguards and a fully validated result.",
+      "evidence_run_ids": [
+        "run_c6b23f21a6c440df95ef6fbc8690d37f"
+      ]
+    },
+    {
+      "trace_id": "trace_436284f1e11b463098fdbf10e3042d2b",
+      "score": 5,
+      "error_detected": false,
+      "recovered": false,
+      "rationale": "Identical to the previous trace; no errors and successful completion. Full validation achieved.",
+      "evidence_run_ids": [
+        "run_448dcb3e07034aafb08be13ded27c5fb"
+      ]
+    },
+    {
+      "trace_id": "trace_dd7e0c596f884da4bb8bbaaecf459cb9",
+      "score": 5,
+      "error_detected": false,
+      "recovered": false,
+      "rationale": "All steps succeeded; no errors. The recovery run confirms acceptance of grounding validation.",
+      "evidence_run_ids": [
+        "run_d94dadde2f2b4d0e91b30a160f9aba1c"
+      ]
+    },
+    {
+      "trace_id": "trace_ab284a244fd74268bfb3d078c8e723d3",
+      "score": 5,
+      "error_detected": false,
+      "recovered": false,
+      "rationale": "Complete success with no errors detected. The grounding validation was accepted without issues.",
+      "evidence_run_ids": [
+        "run_2b262dd8acb54af08af89ad234139cd6"
+      ]
+    },
+    {
+      "trace_id": "trace_d7519e24601a498cbbf56e9d83b1a7f5",
+      "score": 4,
+      "error_detected": true,
+      "recovered": true,
+      "rationale": "The trace had an output contract violation but recovered successfully via post-review action. The final result is validated, though a minor weakness remains.",
+      "evidence_run_ids": [
+        "run_9414ce96dd11411d93c9c617d413be82",
+        "run_f0bd5275de7e4cf2a74385728b85c4de"
+      ]
+    },
+    {
+      "trace_id": "trace_23a05a94f76a4170865f989422d3bc2b",
+      "score": 1,
+      "error_detected": true,
+      "recovered": false,
+      "rationale": "The grounding validation failed and the execution ultimately errored. No recovery occurred, leading to a failed outcome.",
+      "evidence_run_ids": [
+        "run_677bd79f5e114f4c81329d3eafc1811c",
+        "run_2191d64d1ed1435c9ca6cc10971c48c4"
+      ]
+    },
+    {
+      "trace_id": "trace_b7a9bdb639d74d2ebdc654aaffeb817b",
+      "score": 4,
+      "error_detected": true,
+      "recovered": true,
+      "rationale": "Initial grounding validation failed but was corrected and succeeded. The final action was a valid request for information, though evidence grounding and output contract had minor issues.",
+      "evidence_run_ids": [
+        "run_6c0b8d52c1bb4d04b2af32312a2ab02c",
+        "run_a437e35c9f6e4c11af8f53dd9dbd62e0",
+        "run_9733e936ebf943b592881f2af3f7ce37"
+      ]
+    },
+    {
+      "trace_id": "trace_dc5dfe7fe16e4cb4bbf17bfa38890c51",
+      "score": 4,
+      "error_detected": true,
+      "recovered": true,
+      "rationale": "Grounding validation initially failed but was corrected. The final action was a request for information, with minor evidence grounding and output contract issues.",
+      "evidence_run_ids": [
+        "run_d72809001497402d90aed625ae432ac6",
+        "run_9a9d70a21f4a41699d750e6123f90e9f",
+        "run_894a58be612b46938d0ccacb511edf7b"
+      ]
+    },
+    {
+      "trace_id": "trace_e879de167f8344588c142b369c386547",
+      "score": 4,
+      "error_detected": true,
+      "recovered": true,
+      "rationale": "Multiple grounding validation retries were required, but the final run succeeded and the action was a valid request for information. Evidence grounding issues remained, but the outcome was recovered.",
+      "evidence_run_ids": [
+        "run_e5eb4677aa5d4fb5853d606dbaabe737",
+        "run_29483971d8074739b0f86e6d7b63f228",
+        "run_4d36ec22ba3a4c38a492e2c4ebd45048",
+        "run_58ac72b93e0f4dee8d4643b6eb6d666b"
+      ]
+    },
+    {
+      "trace_id": "trace_577d6053eaf2413d9fa25b905395267c",
+      "score": 5,
+      "error_detected": false,
+      "recovered": false,
+      "rationale": "All steps succeeded with no errors. The final action was an approval, fully validated and compliant with the schema.",
+      "evidence_run_ids": [
+        "run_e37058d824c34f8b890cc0d5bdbca981",
+        "run_14ab5feb1ada4592ab9e0636d9c0f34d"
+      ]
+    }
+  ]
+}

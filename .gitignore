@@ -8,6 +8,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+tmp/
 dist/
 build/
 *.egg-info/
@@ -16,3 +17,5 @@ data/*
 artifacts/*
 !artifacts/.gitkeep
 evidence/*.log
+
+.env.local

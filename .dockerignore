@@ -1,0 +1,13 @@
+.git
+.venv
+.env
+.env.*
+artifacts
+data
+evidence
+output
+tests
+__pycache__
+*.pyc
+*.sqlite3-wal
+*.sqlite3-shm
